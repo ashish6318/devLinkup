@@ -153,43 +153,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ---
 
-## 🏗️ Project Structure (Simplified Overview)
---
-/devlinkup                 # Root project folder
-├── backend/               # Node.js, Express.js, MongoDB, Socket.IO
-│   ├── node_modules/      # (ignored)
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   ├── .env               # (ignored, for local secrets)
-│   ├── .gitignore
-│   ├── package.json
-│   └── server.js          # Main backend entry point
-│
-├── frontend/              # React (Vite) application
-│   ├── node_modules/      # (ignored)
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── hooks/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   ├── App.jsx
-│   │   └── main.jsx       # Main frontend entry point
-│   ├── .env.local         # (ignored, for local secrets)
-│   ├── .gitignore
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-│
-├── .gitignore             # Root .gitignore (optional if sub-projects handle all)
-└── README.md
----
+
 
 ## 🚀 Deployment
 
@@ -207,6 +171,45 @@ Continuous deployment is set up via GitHub integration with these platforms.
 Currently, contributions are not formally set up. However, if you have suggestions or find bugs, feel free to open an issue on the GitHub repository.
 
 ---
+---
+
+## 🏗️ Project Structure
+
+```text
+/devlinkup                 # Root project folder
+├── backend/               # Node.js, Express.js, MongoDB, Socket.IO
+│   ├── node_modules/      # (ignored by .gitignore)
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── .env               # (local secrets, ignored)
+│   ├── .gitignore
+│   ├── package.json
+│   └── server.js          # Main backend entry point
+│
+├── frontend/              # React (Vite) application
+│   ├── node_modules/      # (ignored by .gitignore)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── main.jsx       # Main frontend entry point
+│   ├── .env.local         # (local secrets, ignored)
+│   ├── .gitignore
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+│
+├── .gitignore             # Root .gitignore (optional)
+└── README.md              # This file
 
 ## 🧑‍💻 Author
 

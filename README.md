@@ -154,6 +154,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ---
 
 ## 🏗️ Project Structure (Simplified Overview)
+--
 /devlinkup                 # Root project folder
 ├── backend/               # Node.js, Express.js, MongoDB, Socket.IO
 │   ├── node_modules/      # (ignored)

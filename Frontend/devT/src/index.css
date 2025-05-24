@@ -1,0 +1,37 @@
+/* frontend/src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+html, body, #root {
+  min-height: 100vh; /* Or height: 100%; */
+  margin: 0;
+  padding: 0;
+  /* Ensuring text color has a sensible default for the whole page if not overridden */
+  @apply text-slate-800;
+}
+
+/* Light mode default body background (optional, but good practice) */
+body {
+  @apply bg-slate-50; /* Or your default light page background from Tailwind */
+}
+
+/* Dark mode styles for html and body */
+html.dark {
+  color-scheme: dark; /* Informs browser about dark theme, can affect default form controls, scrollbars etc. */
+}
+
+html.dark body {
+  @apply bg-slate-900 text-slate-200; /* Or your default dark page background and text color */
+}
+
+/* Smooth transitions for color and background-color */
+body, .bg-white, .bg-slate-50, .bg-slate-100, .bg-slate-800, .bg-slate-900, /* Add other common bg colors */
+.text-gray-700, .text-gray-800, .text-gray-900, .text-slate-100, .text-slate-200 /* Add other common text colors */
+ {
+  transition-property: color, background-color, border-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}

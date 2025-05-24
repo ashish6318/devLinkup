@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+node_modules/
+
+# Dependencies
+node_modules/
+
+# Build output folder (Vite typically uses 'dist', Create React App uses 'build')
+dist/
+build/
+out/
+.next/ # If you were using Next.js (good to keep if you might switch)
+
+# Environment variable files (NEVER commit your actual .env files)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# It's good practice to commit an example file if you have one
+!.env.example
+
+# Log files & temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Coverage directory for tests
+coverage/
+
+# Operating System and IDE specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userprefs
+# Add any other editor or OS specific files you encounter
